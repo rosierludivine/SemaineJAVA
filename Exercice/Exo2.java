@@ -1,3 +1,4 @@
+/*
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -50,3 +51,4 @@ public class Exo2 {
             System.out.println("Voici le nombre "+nbr+" "+nbr1+" "+nbr2);
 
 }
+*/
