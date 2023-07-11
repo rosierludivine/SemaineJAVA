@@ -22,12 +22,24 @@ public class Main {
         System.out.println("Nombre aléatoire 3 : " + nbr2);
 
 
-        if (nbr % 2 != 0)
+        while (nbr % 2 != 0)
         {
-            nbr = (int)(Math.random() * range) + min;
-            System.out.println("Nombre aléatoire 1 : " + nbr);
+            while(nbr % 2 != 0){
+                nbrTour++;
+                nbr = (int)(Math.random() * range) + min;
+                System.out.println("Nombre aléatoire 1 pour qu'il soit pair: " + nbr);
+            } while (nbr1 % 2 !=0) {
+                nbrTour++;
+                nbr1 = (int)(Math.random() * range) + min;
+                System.out.println("Nombre aléatoire 2 pour qu'il soit pair: " + nbr1);
+            } while (nbr2 % 2 == 0) {
+            nbrTour++;
+            nbr2 = (int)(Math.random() * range) + min;
+            System.out.println("Nombre aléatoire 3 pour qu'il soit pair: " + nbr2);
         }
 
+        }
+        System.out.println("Il y a eu "+ nbrTour+ " de tour, avant que nous ayons la formule pair pair impair ");
 
 /*       Exercice 1
 String[] arrayEmail =
