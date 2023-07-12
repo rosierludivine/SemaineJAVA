@@ -21,7 +21,7 @@ public class Main {
         String nameArticle = null ;
         //création d'un article en dur
         Article article1 = new Article("pommes", 1234, 12 );
-
+        Client client1 = new Client("Rose", "Claire", "Chemin laurier ", 38150, "Saint Maurice" );
         //Demande du nom de l'article
         Scanner scanner = new Scanner(System.in);
         System.out.println("veuillez entrer le nom de l'article1 ");
@@ -33,6 +33,15 @@ public class Main {
         System.out.println("Nom: "+article1.getDesignation());
         System.out.println("Réference : "+article1.getReference());
         System.out.println("Prix : "+article1.getPrix());
+
+        //Affichage client 1
+        //le \n permet de sauter un ligne
+        System.out.println("\nNom: "+client1.getNom());
+        System.out.println("Prenom : "+client1.getPrenom());
+        System.out.println("Code Postal : "+client1.getCodePostal());
+        System.out.println("Adresse : "+client1.getAdresse());
+        System.out.println("Ville : "+client1.getVille());
+
 
 
 
