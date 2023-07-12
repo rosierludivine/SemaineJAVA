@@ -1,14 +1,32 @@
+
 public class Article {
+    public String designation;
+    private int reference;
+    private double prix;
 
-    int reference;
-    String libelle;
-    String name;
-
-    public void pause(){
-        System.out.println("Les "+name +" ont été déposé l'article par terre");
-
+    //Constructeurs
+    public Article(){
     }
-    public void libelleRef(){
-        System.out.println("L'article "+name +" a comme reference  " + reference+" et sont libelle "+ libelle);
+
+    public Article (String designation, int reference, int prix){
+        this.designation = designation;
+        this.prix=prix;
+        this.reference=reference;
+    }
+
+    //Méthodes
+    public String getDesignation() {
+        return designation;
+    }
+
+    public void setDesignation(String nameArticle) {
+        this.designation = nameArticle;
+    }
+
+    public double getPrix() {
+        return prix;
+    }
+    public int getReference() {
+        return reference;
     }
 }

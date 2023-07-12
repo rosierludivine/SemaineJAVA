@@ -7,13 +7,17 @@ public class Exo3 {
     //Méthode main point entrée de notre programme java
     public static void main(String[] args) {
         ///Exercice 3
+
         //number instance de classe (un object )
         //Creation d'un nombre aléatoire
         Random number = new Random();
+
         //nextInt permet de de mettre le parametre de grandeur
         int devineNombre = number.nextInt(101);
+
         // Petit test
         //System.out.println(devineNombre);
+
         //initialisation de la valeur entre par l'utilisateur
         int valueInput = 0;
 
