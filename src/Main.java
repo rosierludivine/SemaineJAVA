@@ -7,10 +7,17 @@ public class Main {
             Article article1 = new Article();
 
             //Afficher les noms
+        //Lui passer les parametres
         article1.name = "pommes";
-        System.out.println("article 1 : "+article1.name);
+        article1.reference = 29485223;
+        article1.libelle= "pommes de type 1 ";
+
+        //Affichage des information de l'article
+        //System.out.println("article 1 : "+article1.name);
 
 
+        //Affichage de la méthode pause
         article1.pause();
+        article1.libelleRef();
     }
 }
