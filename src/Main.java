@@ -26,6 +26,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("veuillez entrer le nom de l'article1 ");
         nameArticle = scanner.next();
+
+
         //Changez le nom de l'article grace au setter
         article1.setDesignation(nameArticle);
 
